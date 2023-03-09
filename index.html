@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Bootstrap Css -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<style>
+  .cards-wrapper{
+    display: flex;
+  }
+  .card{
+    margin: 1em;
+    height: 400px;
+    width: 300px;
+  }
+  .card-img-top{
+    height: 150px;
+    width: 280px;
+  }
+  .image-wrapper{
+    display: flex;
+  }
+
+  @media screen and (max-width: 567px){
+    .card:not(:first-child){
+      display: none;
+    }
+  }
+  .image-wrapper img{
+    border-radius: 10px 10px 0 0;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .one{
+    font-size: 14px;
+    color: #292929;
+    font-weight: 400;
+  }
+  .card-title{
+    display: flex;
+    justify-content: space-between;
+  }
+  .slider-cards{
+    height: 120vh;
+    padding: 75px;
+    border: 2px solid red;
+    background-color: #dcb74a;
+  }
+  .card-text{
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .btn{
+    font-size: 15px;
+    color: #dcb74a;
+    height: 30px;
+    width: 75px;
+    padding-top: 7px;
+    border: 1px solid #dcb74a;
+    border-radius: 25px;
+    font-family: 'Work Sans', sans-serif;
+  }
+  .btn:hover{
+    color: white;
+    background-color: orange;
+    scale: .95;
+  }
+
+  .content-text-front{
+    height: 10em;
+  }
+  .content-text-first{
+    font-size: 50px;
+    font-weight: 550;
+    font-family: 'Work Sans', sans-serif;
+    margin-left: 200px;
+  }
+  .content-text-second{
+    font-size: 20px;
+    font-weight: 400;
+    color: #4F4F4F;
+    font-family: 'Work Sans', sans-serif;
+    margin-left: 200px;
+  }
+
+  @media screen and (max-width: 567px){
+    .content-text-first{
+      font-size: 30px;
+      margin-left: 20px;
+    }
+    .content-text-second{
+      font-size: 15px;
+      margin-left: 20px;
+    }
+    .content-text-front{
+      height: 5em;
+    }
+    .card{
+      margin: 1em;
+      height: 300px;
+      width: 250px;
+    }
+  }
+</style>
+<body>
+  <div class="slider-cards">
+    <div class="content-text-front">
+      <div class="content-text-first">Best Seller <br>Product</div>
+      <div class="content-text-second">See all collections <i class="fa-solid fa-arrow-right"></i></div>
+    </div>
+    <div id="carouselExampleAutoplaying" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <!-- Start -->
+        <div class="carousel-item active">
+          <div class="cards-wrapper">
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="Image/colorful-vintage-collage-design 1 (1).png" alt="...">
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <span class="one">Modern Picture</span>
+                  <span class="two"><i class="fa-solid fa-cart-shopping"></i></span>
+                </div>
+                <p class="card-text">$ 15.00</p>
+                <button type="submit" class="btn">Label</button>
+                <button type="submit" class="btn">Label</button>
+                <button type="submit" class="btn">Label</button>
+              </div>
+            </div>
+            <!-- Cards -->
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="Image/colorful-vintage-collage-design 1 (2).png" alt="...">
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <span class="one">Modern Picture</span>
+                  <span class="two"><i class="fa-solid fa-cart-shopping"></i></span>
+                </div>
+                <p class="card-text">$ 15.00</p>
+                <button type="submit" class="btn">Label</button>
+                <button type="submit" class="btn">Label</button>
+                <button type="submit" class="btn">Label</button>
+              </div>
+            </div>
+            <!-- Cards -->
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="Image/colorful-vintage-collage-design 1.png" alt="...">
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <span class="one">Modern Picture</span>
+                  <span class="two"><i class="fa-solid fa-cart-shopping"></i></span>
+                </div>
+                <p class="card-text">$ 15.00</p>
+                <button type="submit" class="btn">Label</button>
+                <button type="submit" class="btn">Label</button>
+                <button type="submit" class="btn">Label</button>
+              </div>
+            </div>
+            <!-- Cards -->
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="Image/colorful-vintage-collage-design 1 (1).png" alt="...">
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <span class="one">Modern Picture</span>
+                  <span class="two"><i class="fa-solid fa-cart-shopping"></i></span>
+                </div>
+                <p class="card-text">$ 15.00</p>
+                <button type="submit" class="btn">Label</button>
+                <button type="submit" class="btn">Label</button>
+                <button type="submit" class="btn">Label</button>
+              </div>
+            </div>
+            
+            
+            <!-- End of Cards -->
+          </div>
+        </div>
+        <!-- End -->
+        <div class="carousel-item">
+          <div class="cards-wrapper">
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="Image/colorful-vintage-collage-design 1 (2).png" alt="...">
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <span class="one">Modern Picture</span>
+                  <span class="two"><i class="fa-solid fa-cart-shopping"></i></span>
+                </div>
+                <p class="card-text">$ 15.00</p>
+                <button type="submit" class="btn">Label</button>
+                <button type="submit" class="btn">Label</button>
+                <button type="submit" class="btn">Label</button>
+              </div>
+            </div>
+            <!-- Cards -->
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="Image/colorful-vintage-collage-design 1.png" alt="...">
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <span class="one">Modern Picture</span>
+                  <span class="two"><i class="fa-solid fa-cart-shopping"></i></span>
+                </div>
+                <p class="card-text">$ 15.00</p>
+                <button type="submit" class="btn">Label</button>
+                <button type="submit" class="btn">Label</button>
+                <button type="submit" class="btn">Label</button>
+              </div>
+            </div>
+            <!-- Cards -->
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="Image/colorful-vintage-collage-design 1 (2).png" alt="...">
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <span class="one">Modern Picture</span>
+                  <span class="two"><i class="fa-solid fa-cart-shopping"></i></span>
+                </div>
+                <p class="card-text">$ 15.00</p>
+                <button type="submit" class="btn">Label</button>
+                <button type="submit" class="btn">Label</button>
+                <button type="submit" class="btn">Label</button>
+              </div>
+            </div> 
+            <!-- Cards -->
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="Image/colorful-vintage-collage-design 1.png" alt="...">
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <span class="one">Modern Picture</span>
+                  <span class="two"><i class="fa-solid fa-cart-shopping"></i></span>
+                </div>
+                <p class="card-text">$ 15.00</p>
+                <button type="submit" class="btn">Label</button>
+                <button type="submit" class="btn">Label</button>
+                <button type="submit" class="btn">Label</button>
+              </div>
+            </div>
+            
+            <!-- End of Cards -->
+          </div>
+        </div>
+        <!-- End -->
+  
+  
+      <!-- controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span> -->
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span> -->
+      </button>
+    </div>
+  </div>
+
+      <!-- Script Bootstrap -->
+      <script>
+        $('#mainCarousel').carousel({
+          interval: 3000
+      });
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
